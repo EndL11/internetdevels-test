@@ -622,7 +622,6 @@ a:hover {
   }
   .contact_form_container{
     left: 10% !important;
-    width: 500px;
   }
   .contact_form{
     padding: 15px;
@@ -643,6 +642,19 @@ a:hover {
 
 @media(max-width: 567px){
   .head_phone{
-    /*width: 70%;*/
+    display: none;
+  }
+  .center{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .margin_right_none{
+    margin: 0;
   }
 }
