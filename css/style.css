@@ -603,7 +603,10 @@ a:hover {
   }
 }
 
-@media(max-width: 968px){
+@media(max-width: 992px){
+  .logo{
+    margin-bottom: 30px;
+  }
   .contact_form_container{
     left: 20% !important;
   }
@@ -644,7 +647,7 @@ a:hover {
   .head_phone{
     display: none;
   }
-  .center{
+  .center, .logo{
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -656,5 +659,19 @@ a:hover {
   }
   .margin_right_none{
     margin: 0;
+  }
+  .menu_list{
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%;
+  }
+  .menu_item{
+    margin-bottom: 20px;
   }
 }
