@@ -528,12 +528,13 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.contact .contact_item_icon_block {
+.contact .contact_item__icon_block {
   margin-bottom: 32px;
 }
 
 .contact .contact_items {
   margin-bottom: 73px;
+  margin-top: 59px;
 }
 
 .contact .contact_form {
