@@ -513,7 +513,6 @@ a:hover {
 .contact {
   background-color: #ededed;
   padding-top: 60px;
-  position: relative;
 }
 
 .contact .underlined_center:before {
@@ -535,18 +534,13 @@ a:hover {
 
 .contact .contact_items {
   margin-bottom: 73px;
-  padding-bottom: 374px;
-}
-
-.contact .contact_form_container {
-  position: absolute;
-  left: 25%;
-  top: 40%;
 }
 
 .contact .contact_form {
   background-color: #15141a;
-  padding: 59px 0px 40px 66px;
+  padding: 59px 85px 40px 66px;
+  z-index: 1;
+  margin-bottom: -50px;
 }
 
 .contact .contact_form .contact_input {
@@ -639,13 +633,6 @@ a:hover {
   .slider_item{
     width: 70%;
   }
-  .contact_form_container{
-    left: 10% !important;
-  }
-  .contact_form{
-    padding: 15px;
-
-  }
   .block_buttons{
     display: -webkit-flex;
     display: -moz-flex;
@@ -659,7 +646,7 @@ a:hover {
   }
 }
 
-@media(max-width: 567px){
+@media(max-width: 575px){
   .head_phone{
     display: none;
   }
@@ -668,13 +655,10 @@ a:hover {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
     -ms-align-items: center;
     align-items: center;
-  }
-  .margin_right_none{
-    margin: 0;
   }
   .menu_list{
     display: -webkit-inline-flex;
@@ -689,5 +673,8 @@ a:hover {
   }
   .menu_item{
     margin-bottom: 20px;
+  }
+  .contact_form{
+    width: 350px !important;
   }
 }

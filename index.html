@@ -9,7 +9,7 @@
     <title>InternetDevels</title>
 </head>
   <body>
-    <div class="block_head">
+    <div class="block_head" id="header">
       <div class="container">
         <div class="header">
           <div class="row align-items-between justify-content-center">
@@ -19,7 +19,7 @@
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
             <div class="menu">
               <ul class="menu_list">
-                <li class="menu_item active"><a href="#">Home</a></li>
+                <li class="menu_item active"><a href="#header">Home</a></li>
                 <li class="menu_item"><a href="#features">Features</a></li>
                 <li class="menu_item"><a href="#about">About</a></li>
                 <li class="menu_item"><a href="#testimontials">Testimontials</a></li>
@@ -283,25 +283,25 @@
           <div class="title underlined_center">Pricings & Plans</div> 
         </div>
         <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-6 col-sm-12 price_item">
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 price_item">
             <div class="price_item__title">FREE</div>
             <div class="price_item__info"><sup>$</sup>0 <br><span class="text">/per month</span></div>
             <div class="price_item__text text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.</div>
             <a href="#" class="price_item__link">Order now</a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 price_item">
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 price_item">
             <div class="price_item__title">personal</div>
             <div class="price_item__info"><sup>$</sup>25 <br><span class="text">/per month</span></div>
             <div class="price_item__text text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.</div>
             <a href="#" class="price_item__link">Order now</a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 price_item popular">
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 price_item popular">
             <div class="price_item__title">Business</div>
             <div class="price_item__info"><sup>$</sup>50 <br><span class="text">/per month</span></div>
             <div class="price_item__text text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.</div>
             <a href="#" class="price_item__link">Order now</a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 price_item">
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 price_item">
             <div class="price_item__title">Ultimate</div>
             <div class="price_item__info"><sup>$</sup>99 <br><span class="text">/per month</span></div>
             <div class="price_item__text text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.</div>
@@ -314,6 +314,7 @@
 
     <div class="contact" id="contacts">
       <div class="container-fluid">
+        
         <div class="container">
           <div class="block_text">
             <div class="topic">stay in touch</div>
@@ -337,38 +338,39 @@
             </div>
           </div>
 
-                <div class="row">
-                  <div class="col-xl-6 col-lg-5 col-md-7 col-sm-8 contact_form_container">
-                    <div class="contact_form">
-                      <form>
-                        <div class="row align-items-center">
-                          <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 align-self-start">
-                            <div class="row align-items-center">
-                              <div class="col-lg-12 col-md-8 col-sm-12">
-                                <input type="text" class="contact_input" placeholder="name *" name="name" required>
-                              </div>
-                              <div class="col-lg-12 col-md-8 col-sm-12">
-                                <input type="email" class="contact_input" placeholder="email *" name="email" required>
-                              </div>
-                              <div class="col-lg-12 col-md-8 col-sm-12">
-                                <input type="text" class="contact_input" placeholder="subject *" name="subject" required>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                            <textarea name="message" class="contact_input contact_textarea" placeholder="message *" cols="30" rows="10" required></textarea>
-                          </div>
+          <div>
+            <div class="row justify-content-center">
+              <div class="col-xl-8 col-lg-10 col-md-12 col-sm-8 contact_form">
+                <form>
+                  <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 align-self-start">
+                      <div class="row align-items-center">
+                        <div class="col-lg-12 col-md-8 col-sm-12">
+                          <input type="text" class="contact_input" placeholder="name *" name="name" required>
                         </div>
-                        <div class="row justify-content-end center">
-                          <div class="col-xl-6 col-lg-10 col-md-10 col-sm-10 margin_right_none">
-                            <button type="submit" class="contact_button">Send message</button>
-                          </div>
+                        <div class="col-lg-12 col-md-8 col-sm-12">
+                          <input type="email" class="contact_input" placeholder="email *" name="email" required>
                         </div>
-                      </form>
-                    </div>                   
-                  </div>              
-            </div>
+                        <div class="col-lg-12 col-md-8 col-sm-12">
+                          <input type="text" class="contact_input" placeholder="subject *" name="subject" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                      <textarea name="message" class="contact_input contact_textarea" placeholder="message *" cols="30" rows="10" required></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-9 d-flex justify-content-end px-md-4 px-sm-0 center">
+                      <button type="submit" class="contact_button">Send message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>            
           </div>
+
+        </div>              
         <div class="map">
           <iframe width="100%" height="370" id="gmap_canvas" src="https://maps.google.com/maps?q=1001%20Brickell%20Bay%20Dr.%20Suite%201900%20%20Miami%2C%20FL%2033131&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
