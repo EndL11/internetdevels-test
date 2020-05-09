@@ -52,6 +52,10 @@
   font-family: "SourceSansPro";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul,
 p,
 h1,
@@ -112,8 +116,20 @@ a:hover {
   position: relative;
 }
 
-.menu_item:hover {
-  cursor: pointer;
+.menu_item a:hover::after,
+.menu_item a:hover::before {
+  content: "";
+  position: absolute;
+  width: 47%;
+  height: 2px;
+  background-color: #008ed6;
+  bottom: -9px;
+}
+.menu_item a:hover::before{
+  left: 0;
+}
+.menu_item a:hover::after{
+  right: 0;
 }
 
 .menu_item.active:before,
